@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    color: white;
+
 }
 html{
     scroll-behavior:smooth;
@@ -11,10 +11,7 @@ html{
 }
 body{
     font-family: 'Poppins';
-    background-image:url(../image/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: lightblue;
 }
 /*Navigation*/
 header{
@@ -25,7 +22,7 @@ header{
     left: 0;
     background: darkgray;
     color: white;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 nav{
     width: 100%;
@@ -43,30 +40,62 @@ nav{
 .menu li a {
     color: #FFF;
 }
-.logo img{
-    width: 3rem;
+.logo {
+    width: 2rem;
+}
+.toggle{
+    display: none;
 }
 @media all and (max-width:991px){
+    header{
+        background: transparent;
+    }
     .toggle{
         display: block;
        font-size: 2rem;
        cursor: pointer;
+       position: relative;
+       z-index: 20;
+    }
+    .logo{
+        position: relative;
+        z-index: 20;
     }
     .ouvrir{
         display: block;
     }
-    .fermer{
-        display: none;
-    }
-    .open .ouvrir{
-        display: none;
-    }
-    .open .fermer{
-        display: block;
-    }
+   .fermer{
+    display: none;
+   }
+   .open .ouvrir{
+    display: none;
+   }
+   .open .fermer{
+    display: block;
+   }
+   .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 1s;
+   }
+   .menu li a{
+    font-size: 2rem;
+   }
+   .open .menu {
+    transform: translateX(0);
+    
+   }
 }
 .container{
-    width: 200vh;
+    width: 100vh;
 }
 h2{
     font-size: 4vw;
