@@ -1,6 +1,6 @@
-const menuHamburger = document.querySelector("menu-hamburger")
-const navLink = document.querySelector("nav-link")
+let toggle = document.querySelector('.toggle');
+let body = document.querySelector('body');
 
-menuHamburger.addEventListener('click', () => {
-    navLink.classList.toggle('mobile-menu')
+toggle.addEventListener('click', function(){
+    body.classList.toggle('open')
 })

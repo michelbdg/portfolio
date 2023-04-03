@@ -1,19 +1,72 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
     color: white;
 }
 html{
     scroll-behavior:smooth;
+    font-size: 16px;
 }
 body{
     font-family: 'Poppins';
     background-image:url(../image/background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+/*Navigation*/
+header{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background: darkgray;
+    color: white;
+    padding: 2rem;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+}
+.menu li a {
+    color: #FFF;
+}
+.logo img{
+    width: 3rem;
+}
+@media all and (max-width:991px){
+    .toggle{
+        display: block;
+       font-size: 2rem;
+       cursor: pointer;
+    }
+    .ouvrir{
+        display: block;
+    }
+    .fermer{
+        display: none;
+    }
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
 }
 .container{
-    margin: 0 auto;
-    width: 1200px;
+    width: 200vh;
 }
 h2{
     font-size: 4vw;
@@ -22,9 +75,7 @@ h2{
     letter-spacing: 3px;
 
 }
-span{
-    display: inline-block;
-}
+
 a, a:visited {
     cursor: pointer;
     text-decoration: none;
@@ -61,97 +112,7 @@ p{
     font-size: 25px;
     line-height: 1.5;
 }
-header{
-    background: blue;
-    height: 100px;
-    width: 50%;
-    opacity: 0.9;
-    background-size: cover;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0px 5px 10px white;
 
-}
-.navbar{
-    background: #bfb414;
-    position: absolute;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;  
-}
-.navbar a {
-color: white;
-}
-.navbar .logo{
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-    
-}
-.navbar .nav-link ul {
-    display: flex;
-}
-.navbar .nav-link ul li  {
-    margin : 0 25px;
-}
-.navbar .nav-link ul li.active  {
-    color: red;
-    font-weight: 600;
-}
-.navbar .menu-hamburger{
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 55px;s
-    width: 35px;
-} 
-@media screen and (max-width:900px) {
-    .navbar{
-        padding: 50px;
-        width: 100%;
-        background: beige;
-    }
-    .navbar .logo{
-        position:absolute;
-        top: 50px;
-        left: 30px;
-    }
-    .nav-link{
-        display: block;
-    }
-    .nav-link{
-        top: 0;
-        left: 0;
-       position: absolute;
-       backdrop-filter: blur(3px);
-       width: 100%;
-       height: 100vh;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       transition: all 0.5 ease;
-       margin-left: -100%;
-    }
-    .mobile-menu{
-        margin-left: 0;
-    }
-    .nav-link ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .navbar .nav-link ul li  {
-        margin: 25px 0;
-        font-size: 1 2em;
-    }
-}
-@media (min-width: 768px){≈
-    .container {
-        width: 750px;
-    }
-}
 .bloc-1{
     padding-right: 15px;
     padding-left: 15px;
@@ -323,14 +284,10 @@ progress{
   border: 1px solid white;
 }
 footer{
-
-    position: absolute;
-    width: 125px;
-    font-size: 10px;
-    background: black;
     color: white;
-    border: 1px solid white;
-    
+}
+.footer{
+    font-size: 5px;
 }
 .contact img{
     width: 50px;
