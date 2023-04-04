@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: 'Poppins';
-    background: lightblue;
+    /*background: lightblue;*/
 }
 /*Navigation*/
 header{
@@ -95,7 +95,11 @@ nav{
    }
 }
 .container{
-    width: 100vh;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
 }
 h2{
     font-size: 4vw;
@@ -137,11 +141,13 @@ a:hover::after{
         transform: scaleX(1);
     }
 }
-p{
-    font-size: 25px;
-    line-height: 1.5;
+.info {
+    
 }
-
+.info p{
+    font-size: 2rem;
+    color: white;
+}
 .bloc-1{
     padding-right: 15px;
     padding-left: 15px;
@@ -149,19 +155,7 @@ p{
     margin-left: auto;
     align-items: center;
 }
-.info {
-    margin: 100px 0 100px
-}
-.info p {
-    width: 150%;
-    min-width: 280px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: calc(5px + 2.5vw);
-    font-size: 30px;
-    letter-spacing: 5px;
-    align-items: center;
-}
+
 .skills{
     display:inline-block;
     margin: 200px 0 250px;
