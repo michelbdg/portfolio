@@ -3,24 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-
+    
 }
 html{
     scroll-behavior:smooth;
     font-size: 16px;
 }
 body{
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Poppins';
-    /*background: lightblue;*/
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
 }
 /*Navigation*/
 header{
     position: absolute;
     width: 100%;
-    height: 8vh;
+    height: 15vh;
     top: 0;
     left: 0;
-    background: darkgray;
+    background: transparent;
     color: white;
     padding: 0 2rem;
 }
@@ -64,7 +72,7 @@ nav{
     .ouvrir{
         display: block;
     }
-   .fermer{
+   .toggle .fermer{
     display: none;
    }
    .open .ouvrir{
@@ -95,58 +103,54 @@ nav{
    }
 }
 .container{
-    background-image: url(../image/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+   background: transparent;
     margin: 0 auto;
-
+    padding: 12px 20px;
 }
 h2{
-    font-size: 4vw;
+    font-size: 2rem;
     text-align: center;
     color: white;
     letter-spacing: 3px;
 
 }
-
-a, a:visited {
-    cursor: pointer;
-    text-decoration: none;
-    position: relative;
-    color: white;
-    transition: 0.1s linear;
-}
-a::after{
-    content: "";
-    position: absolute;
+.presentation{
     width: 100%;
-    background: white;
-    height: 1px;
-    bottom: -4px;
-    left: 0;
-    transform-origin: left;
+    height: 700px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
 }
-a:hover{
-    transform: scale(1.04);
-    color: black;
-}
-a:hover::after{
-    animation: animLink 1.4s infinite ease-in-out;
-}
-@keyframes animLink{
-    50% {
-        transform: scaleX(0.2);
-    }
-    100% {
-        transform: scaleX(1);
-    }
+.presentation h1{
+    font-size: 40px;
 }
 .info {
-    
-}
-.info p{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/student-849822__480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 8px auto;
+    padding: 12px 20px;
     font-size: 2rem;
-    color: white;
+}
+.file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: #000;
+    width: 10rem;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
 }
 .bloc-1{
     padding-right: 15px;
