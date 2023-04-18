@@ -117,7 +117,7 @@ h2{
 .presentation{
     width: 100%;
     height: 700px;
-    background: orange;
+    background: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +125,12 @@ h2{
     font-size: 1rem;
 }
 .presentation h1{
-    font-size: 40px;
+    font-size: 100px; 
+}
+.presentation-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .info {
     width: 100%;
