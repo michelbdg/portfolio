@@ -99,6 +99,9 @@ nav{
    }
    .open .menu {
     transform: translateX(0);
+   }
+   .bloc-1{
+    background: yellow;
     
    }
 }
@@ -116,25 +119,22 @@ h2{
 }
 .presentation{
     width: 100%;
-    height: 700px;
+    height: 800px;
     background: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
 }
-.presentation h1{
-    font-size: 100px; 
+.presentatioon-title{
+    font-size: 4rem;
 }
 .presentation-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 2rem;
 }
 .info {
     width: 100%;
-    height: 700px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +144,10 @@ h2{
     margin: 8px auto;
     padding: 12px 20px;
     font-size: 2rem;
+    color: #000;
+}
+.info h2{
+    font-size: 3rem;
 }
 .file{
     display: flex;
@@ -158,34 +162,27 @@ button{
     border-radius: 15px;
 }
 .bloc-1{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    height: 900px;
+    background:lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 8px auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    color: #000;
 }
 
 .skills{
-    display:inline-block;
-    margin: 200px 0 250px;
-    width: 100%;
-    align-items: center;
-    font-size: 50px;
-}
-.skills, h2{
-    text-align: center;
-}
-.skills, label{
-    text-align: center;
+    font-size: 2rem;
 }
 
 .skillBar{
     display: flex;
 }
 progress{
-    width: 50%;
-    margin: auto 10px;
-    padding: 1px;
     border-radius: 15px;
 }
 ::-webkit-progress-bar{
