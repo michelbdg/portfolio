@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    list-style: none;
+}
+body{
+    background: #ebecf0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    display: flex;
+    border: 2px solid black;
+    padding: 4em;
+    border-radius: 30px;
+}
+.skills::before{
+    content: "Compétences";
+    position: absolute;
+    top: -18%;
+    left: 40px;
+    background: #ebecf0;
+    padding: 5px 10px;
+    color: #6d7587;
+}
+.skills .skillBar{
+    display: flex;
+    flex-direction: column;
+    color: #6d7587;
+    font-size: 2em;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.skills .skillBar span{
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #FFFFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #ebecf0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.skills .skillBar span:hover{
+    color: #1a60f2;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #FFFFFFFF,
+        inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #FFFFFFFF;   
+}
+
+.bar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bar{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #d9dade,  
+    inset -6px -6px 6px #FFFFFFFF;
+}
+.bar .progress{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right,#0e3fea, #1d69f5 );
+    border-radius: 20px;
+}
+
+.bar:nth-child(1) .progress{
+    width: 50%;
+}
+
+.bar:nth-child(2) .progress{
+    width: 80%;
+}
+
+.bar:nth-child(3) .progress{
+    width: 70%;
+}
+
+.bar:nth-child(4) .progress{
+    width: 50%;
+}
+.bar:nth-child(5) .progress{
+    width: 85%;
+}
+
+.bar:nth-child(6) .progress{
+    width: 90%;
+}

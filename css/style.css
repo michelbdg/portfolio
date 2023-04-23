@@ -21,7 +21,9 @@ a{
     color: #FFF;
     cursor: pointer;
 }
-/*Navigation*/
+
+
+/* Navigation */
 header{
     position: absolute;
     width: 100%;
@@ -54,6 +56,9 @@ nav{
 .toggle{
     display: none;
 }
+
+
+/* Partie responsive */
 @media all and (max-width:991px){
     header{
         background: transparent;
@@ -100,11 +105,16 @@ nav{
    .open .menu {
     transform: translateX(0);
    }
-   .bloc-1{
-    background: yellow;
-    
-   }
+   
 }
+@media screen and (max-width:499px){
+    .bloc-2{
+        background: red;
+    }
+}
+
+
+/* Partie Introduction */
 .container{
    background: transparent;
     margin: 0 auto;
@@ -119,8 +129,8 @@ h2{
 }
 .presentation{
     width: 100%;
-    height: 800px;
-    background: lightgray;
+    height: 900px;
+    background: rebeccapurple;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,10 +138,15 @@ h2{
 }
 .presentatioon-title{
     font-size: 4rem;
+    color: yellow;
 }
+
 .presentation-2{
     font-size: 2rem;
+    color: yellow;
 }
+
+/* Partie Parcours */
 .info {
     width: 100%;
     height: 900px;
@@ -161,55 +176,116 @@ button{
     text-align: center;
     border-radius: 15px;
 }
+
+/* Partie 2*/
 .bloc-1{
     width: 100%;
     height: 900px;
-    background:lightgray;
+    background:rebeccapurple;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 8px auto;
-    padding: 12px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
+    
 }
-
 .skills{
-    font-size: 2rem;
+    display: flex;
+    border: 2px solid black;
+    padding: 4em;
+    border-radius: 30px;
+}
+.skills::before{
+    content: "Compétences";
+    position: absolute;
+    top: -18%;
+    left: 40px;
+    background: #ebecf0;
+    padding: 5px 10px;
+    color: #6d7587;
+}
+.skills .skillBar{
+    display: flex;
+    flex-direction: column;
+    color: #6d7587;
+    font-size: 2em;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.skills .skillBar span{
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #FFFFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #ebecf0;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.skillBar{
+.skills .skillBar span:hover{
+    color: #1a60f2;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #FFFFFFFF,
+        inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #FFFFFFFF;   
+}
+
+.bar-container{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-progress{
-    border-radius: 15px;
+.bar{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #d9dade,  
+    inset -6px -6px 6px #FFFFFFFF;
 }
-::-webkit-progress-bar{
-    background-color: white;
-    border-radius: 15px;
+.bar .progress{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right,#0e3fea, #1d69f5);
+    border-radius: 20px;
 }
-::-webkit-progress-value{
-    background-color: black;
-    border-radius: 15px;
+
+.bar:nth-child(1) .progress{
+    width: 50%;
 }
-::-webkit-progress-inner-element{
-    border: 2px solid white;
-    border-radius: 14px;
+
+.bar:nth-child(2) .progress{
+    width: 80%;
 }
-.skills, p{
-    margin: 30px auto;
+
+.bar:nth-child(3) .progress{
+    width: 70%;
 }
+
+.bar:nth-child(4) .progress{
+    width: 50%;
+}
+.bar:nth-child(5) .progress{
+    width: 85%;
+}
+
+.bar:nth-child(6) .progress{
+    width: 90%;
+}
+
+
+/* Partie Parcours scolaire */
+.bloc-2{
+    background: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .card{
     width: 300px;
     margin: 100px auto;
     background-color: gray;
     box-shadow: 0px 5px 20px black;
-}
-
-.card a {
-    color: white;
-    text-decoration: none;
 }
 
 .card:hover .card-image img{
@@ -241,49 +317,31 @@ progress{
 .card-date{
     font-family: 'Poppins';
 }
-.card-title, card-excerpt{
-    font-family: 'Poppins';
-}
+
 .card-date, .card-title{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.card{
-    display: inline-block;
-    grid-template-columns: 100px 100px 100px;
-    grid-auto-rows: 50px;
+
+/* Partie experience*/
+.bloc-3{
+    background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
 }
 
-.cd-container{
-    align-items: center;
-}
 .cd-time-bloc{
-    
-    width: 300px;
-    margin: 20% 0% auto;
-    padding-left: 15px;
-    padding: auto;
     background-color: gray;
     box-shadow: 0px 5px 20px black;
     border: 1px solid white;
-    color: white;
-}
-.cd-time-bloc:hover {
-    width: 25%;
-    filter: grayscale(O);
-}
-.cd-time-bloc{
-    filter: grayscale(1);
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.cd-time-bloc, .cd-time-title, p {
     text-align: center;
 }
+
 
 .cd-time-bloc .content-skills{
     font-size: 14px;
@@ -296,28 +354,24 @@ progress{
 .cd-time-bloc .content-skills li {
     background: #40484D;
     border-radius: 2px;
-    display: inline-block;
     padding: 2px 10px;
     color: wheat;
     margin: 3px 2px;
     flex-grow: 1;
 }
-.cd-time-bloc{
-    display: inline-block;
-    grid-template-columns: 50px 50px 50px;
-    grid-auto-rows: auto;
-    border-spacing: 10px 1rem ;
-}
-.contact{
 
-  border: 1px solid white;
-}
-footer{
-    color: white;
-}
-.footer{
-    font-size: 5px;
+
+/* Partie Contact */
+.contact{
+    background: rebeccapurple;
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
 }
 .contact img{
     width: 50px;
+}
+
+.footer{
+    text-align: center;
 }
