@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="" href="image/logo.png"/>
+    <!-- lien Css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="" href="image/logo.png" />
+    <!-- lien Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,7 +35,9 @@
             </ul>
         </nav>
     </header>
+    <!-- Section container -->
     <section class="container">
+        <!-- Partie introduction -->
         <div class="presentation">
             <div>
                 <h1 class="presentatioon-title">Marjory Egneng</h1>
@@ -43,9 +46,12 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Partie information -->
         <div class="info">
+            <h2><a href="#parcours" id="info-1">Mon parcours</a></h2>
             <div class="infor-2">
-                <h2><a href="#parcours" id="info-1">Mon parcours</a></h2>
+               
                 <p>
                     Actuellement en Master 2 du programme grande école à l’institut Mines telecom, j’ai d’abord obtenu
                     un
@@ -100,7 +106,7 @@
         <div class="bloc-2">
             <div class="card">
                 <div class="card-image">
-                    <img src="image/student-849825__480.jpg" alt="student">
+                    <img src="assets/image/student-849825__480.jpg" alt="student">
                 </div>
                 <div class="card-body">
                     <div class="card-date">
@@ -120,7 +126,7 @@
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="image/student-849822__480.jpg" alt="student">
+                    <img src="assets/image/student-849822__480.jpg" alt="student">
                 </div>
                 <div class="card-body">
                     <div class="card-date">
@@ -207,6 +213,27 @@
                 </ul>
             </div>
         </div>
+        <section class="audio-visu">
+            <h2>Video</h2>
+            <!--<div class="video">
+                <video src="assets/video/pluie-78.mp4" id="" type="video/mp4" autoplay loop muted></video>
+                
+            </div>-->
+            <div class="audio">
+                <audio src="assets/audio/smoke-143172.mp3" type=""></audio>
+            </div>
+            <div>
+                <input type="range" id="track" min="0" value="0">
+                <span id="elapsed">0:00</span> / <span id="track-time">1:00</span> 
+                <span id="play-btn"><i class="fa-solid fa-play fa-xl"></i></span>
+                <span id="pause-btn"><i class="fa-solid fa-pause fa-xl"></i></span>
+                <span id="stop-btn"><i class="fa-solid fa-stop fa-xl"></i></span>
+            </div>
+            <div>
+                <input type="range" id="volume" min="0" max="1" step="0.1">
+                <span id="volume-value">100%</span>
+            </div>
+        </section>
         <!--Contact -->
         <section class="section-3">
             <h2><a href="#contact" id="contact">Contactez-Moi</a></h2>
@@ -215,20 +242,20 @@
                     <h3>Mes Réseaux</h3><br>
                     <ul class="liste-reseaux">
                         <li>
-                            <a href="https://www.linkedin.com/in/marjory-e-b83914159"><img src="image/linkedin.jpg" alt="Icones réseaux sociaux">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/marjory-e-b83914159"><img src="assets/image/linkedin.jpg" alt="Icones réseaux sociaux">Linkedin</a>
                         </li>
-                        <li><a href="mailto:marjory_egneng@yahoo.fr"><img src="image/gmail.jpg"
-                                    alt="Icones réseaux sociaux">Gmail</a></li>
+                        <li>
+                            <a href="mailto:marjory_egneng@yahoo.fr"><img src="assets/image/gmail.jpg" alt="Icones réseaux sociaux">Gmail</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <!-- Parie footer -->
         <footer>
             <p id="footer">&copy;Copyright Portfolio Marjory Egneng 2023</p>
         </footer>
     </section>
-    
     <script src="js/script.js"></script>
 </body>
-
 </html>
