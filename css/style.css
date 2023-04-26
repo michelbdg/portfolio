@@ -358,17 +358,21 @@ button{
     margin: 3px 2px;
     flex-grow: 1;
 }
+
+
 /* Partie audio */
 .audio-visu{
-    background: lightgray;
+    background: lightslategray;
     width: 100%;
     height: 900px;
     padding: 12px 20px;
+ 
 
 }
 #stop-btn ,#pause-btn{
     display: none;
 }
+
 /* Partie Contact */
 .contact{
     background: rebeccapurple;
@@ -379,6 +383,8 @@ button{
 .contact img{
     width: 50px;
 }
+
+
 /* Partie footer */
 .footer{
     text-align: center;
