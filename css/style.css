@@ -373,6 +373,61 @@ button{
     display: none;
 }
 
+/* Partie video */
+.video{
+width: 100px;
+border-radius: 15px;
+
+}
+
+#pause, #stop-video{
+    display: none;
+}
+
+/* Partie diaporama */
+
+.diaporama{
+    width:90%;
+    background: lightgray;
+}
+.diapo{
+    position: relative;
+    overflow: hidden;
+    
+}
+.elements{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+.element > img{
+    width: 100%;
+}
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+}
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}
+
+
 /* Partie Contact */
 .contact{
     background: rebeccapurple;
